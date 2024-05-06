@@ -1,0 +1,15 @@
+﻿<Window x:Class="_1111.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1111"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="t1" Height="NaN" Margin="10,24,382,294" Width="NaN" />
+        <TextBox x:Name="t2" Text="{Binding ElementName=t1, Path=Text}" Height="NaN" Margin="446,19,22,290" Width="NaN" />
+        <Slider x:Name="slider1" Height="NaN" Margin="27,42,400,236" Width="NaN" />
+        <Slider x:Name="slider2" Value="{Binding ElementName=slider1, Path=Value}" Height="NaN" Margin="497,42,44,267" Width="NaN" />
+    </Grid>
+</Window>
